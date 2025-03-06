@@ -7,6 +7,14 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# TypeScript build info
+*.tsbuildinfo
+tsconfig.node.tsbuildinfo
+
+# Vite config
+vite.config.js
+vite.config.ts.timestamp-*
+
 node_modules
 dist
 dist-ssr
