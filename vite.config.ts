@@ -10,5 +10,14 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src/")
     }
   },
-  base: './',
+  base: '/todo-list-fsd/',
+  build: {
+    rollupOptions: {
+      output: {
+        entryFileNames: 'assets/[name].js',
+        chunkFileNames: 'assets/[name].js',
+        assetFileNames: 'assets/[name].[ext]'
+      }
+    }
+  }
 })
