@@ -12,6 +12,9 @@ export default defineConfig({
   },
   base: '/todo-list-fsd/',
   build: {
+    outDir: 'dist',
+    assetsDir: 'assets',
+    emptyOutDir: true,
     rollupOptions: {
       output: {
         entryFileNames: 'assets/[name].js',
